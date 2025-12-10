@@ -73,19 +73,7 @@ export default function WhatsAppButton({ phoneNumber, message = "Hello! I'd like
                 />
             </motion.button>
 
-            {/* Tooltip */}
-            <motion.div
-                className="absolute left-20 bottom-0 bg-[#2C1810] text-white px-4 py-2 rounded-lg shadow-lg text-sm whitespace-nowrap pointer-events-none"
-                initial={{ opacity: 0, x: -10 }}
-                animate={{
-                    opacity: isHovered ? 0 : 1,
-                    x: isHovered ? -10 : 0
-                }}
-                transition={{ duration: 0.2 }}
-            >
-                Need help? Click to chat!
-                <div className="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-r-4 border-r-[#2C1810]"></div>
-            </motion.div>
+            {/* Tooltip removed */}
         </div>
     );
 }
